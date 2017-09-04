@@ -1,4 +1,5 @@
 import { Component, Input, OnInit, AfterViewChecked } from '@angular/core';
+import { Router }            from '@angular/router';
 declare var $:any;
 
 @Component({
