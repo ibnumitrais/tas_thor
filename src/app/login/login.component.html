@@ -1,0 +1,55 @@
+<div class="ui inverted segment no-padding borderradiusless">
+    <div class="ui equal width fluid grid" style="height: 100vh">
+        <div class="middle aligned row">
+            <div class="column"></div>
+            <div class="four wide column">
+             
+               <!--  <div class="ui error mini message closeable">
+                    <i class="close icon"></i>
+                    <div class="header">
+                      v
+                    </div>
+                    
+                </div>
+        
+                <div class="ui attached message borderradiusless">
+                    <h4 class="ui header">
+                        <img class="ui image" src="">
+                        <div class="content">
+                      
+                           a
+                        </div>
+                    </h4>
+                </div> -->
+                <form class="ui form attached padded segment" role="form" method="GET" action="/dashboard">
+                   
+                    <!--<a href="{{ route('register') }}" class="ui green right ribbon large label absoluted capitalize">
+                        <i class="add user icon "></i> @lang('basic.register')
+                    </a>-->
+                    <div class="field">
+                        <label class="capitalize">Username</label>
+                        <input placeholder="Username" id="email" type="text" name="email" value="a">
+                    </div>
+                    <div class="field">
+                        <label class="capitalize">Password</label>
+                        <input placeholder="Password" id="a" type="password" name="password" >
+                    </div>
+                    <div class="field">
+                        <div class="ui checkbox">
+                            <input id="remember" name="remember" type="checkbox">
+                            <label class="capitalize" for="remember">Remember Password</label>
+                        </div>
+                    </div>
+                    <div class="ui center aligned">
+                        <button class="ui primary button fluid uppercase ki-text"></button>
+                    </div>
+                </form>
+                <!-- <div class="ui bottom attached message borderradiusless">
+                    <i class="warning sign icon"></i>
+                    @lang('auth.lost-password-1') <a href="{{ route('password.request') }}">@lang('auth.lost-password-2')</a>
+                </div> -->
+            </div>
+            <div class="column"></div>
+        </div>
+    </div>
+</div>

@@ -6,11 +6,13 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 
 //COMPONENT
 import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
