@@ -9,7 +9,11 @@ declare var $:any;
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) {
+    if (!localStorage.getItem('currentUser')) {
+      this.router.navigate(['/login']);
+    }
+  }
 
   ngOnInit(){
     $('.dropdown:not(.custom)').dropdown();

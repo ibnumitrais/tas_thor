@@ -14,25 +14,25 @@
                         </div>
                     </h4>
                 </div>
-                <div class="ui form attached padded segment">
+                <form class="ui form attached padded segment login" #loginForm="ngForm" (ngSubmit)="login(loginForm)">
                     <div class="field">
                         <label class="capitalize">Username</label>
-                        <input placeholder="Username" type="email" name="email" required>
+                        <input placeholder="Username" type="text" name="username" ngModel required>
                     </div>
                     <div class="field">
                         <label class="capitalize">Password</label>
-                        <input placeholder="Password" type="password" name="password" required>
+                        <input placeholder="Password" type="password" name="password" ngModel required>
                     </div>
-                    <div class="field">
+                    <!-- <div class="field">
                         <div class="ui checkbox">
                             <input name="remember" type="checkbox">
                             <label class="capitalize" for="remember">Remember Password</label>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="ui center aligned">
-                        <button (click)="login()" class="ui primary button fluid uppercase ki-text">Login</button>
+                        <button class="ui primary button fluid uppercase ki-text">Login</button>
                     </div>
-                </div>
+                </form>
             </div>
             <div class="column"></div>
         </div>
