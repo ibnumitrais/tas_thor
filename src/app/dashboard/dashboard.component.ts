@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, AfterViewChecked } from '@angular/core';
+declare var $:any;
 
 @Component({
   selector: 'app-dashboard',
@@ -9,8 +10,13 @@ export class DashboardComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(){
+    $('.dropdown:not(.custom)').dropdown();
 
+    $('.ui.sidebar')
+      .sidebar({
+        context: $('.bottom.segment')
+      })
+      .sidebar('attach events', '.menu .item.trigger');
   }
-
 }
