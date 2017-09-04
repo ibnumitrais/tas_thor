@@ -3,9 +3,6 @@
         <div class="middle aligned row">
             <div class="column"></div>
             <div class="four wide column">
-
-
-
                 <div class="ui attached message borderradiusless">
                     <h4 class="ui header">
                         <img class="ui image" src="favicon.ico">
@@ -17,25 +14,25 @@
                         </div>
                     </h4>
                 </div>
-                <form class="ui form attached padded segment" role="form" method="GET" action="/dashboard">
+                <div class="ui form attached padded segment">
                     <div class="field">
                         <label class="capitalize">Username</label>
-                        <input placeholder="Username" id="email" type="text" name="email" value="">
+                        <input placeholder="Username" type="email" name="email" required>
                     </div>
                     <div class="field">
                         <label class="capitalize">Password</label>
-                        <input placeholder="Password" id="a" type="password" name="password" >
+                        <input placeholder="Password" type="password" name="password" required>
                     </div>
                     <div class="field">
                         <div class="ui checkbox">
-                            <input id="remember" name="remember" type="checkbox">
+                            <input name="remember" type="checkbox">
                             <label class="capitalize" for="remember">Remember Password</label>
                         </div>
                     </div>
                     <div class="ui center aligned">
-                        <button class="ui primary button fluid uppercase ki-text">Login</button>
+                        <button (click)="login()" class="ui primary button fluid uppercase ki-text">Login</button>
                     </div>
-                </form>
+                </div>
             </div>
             <div class="column"></div>
         </div>
