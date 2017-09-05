@@ -2,6 +2,7 @@
 const express = require('express');
 const path = require('path');
 const http = require('http');
+const cors = require("cors");
 const bodyParser = require('body-parser');
 
 // Get our API routes
@@ -12,6 +13,8 @@ const app = express();
 // Parsers for POST data
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(function(req, res, next) {next();});
+app.use(cors());
 
 // Point static path to dist
 app.use(express.static(path.join(__dirname, 'dist')));
